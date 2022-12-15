@@ -187,7 +187,7 @@ const PDF: React.FC<ResumePageProps> = (props) => {
     education,
     // hobbies,
     personalInformation,
-    privateInformation,
+    // privateInformation,
     professional,
     skills,
   } = props;
@@ -229,14 +229,14 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                 <Text style={styles.bold}>Location:</Text>
                 <Text>&nbsp;{personalInformation.attributes.location}</Text>
               </View>
-              {privateInformation?.map((privateField) => (
-                <View key={privateField.slug} style={styles.flexRowAlignStart}>
-                  <Text style={styles.bold}>
-                    {privateField.attributes.label}:&nbsp;
-                  </Text>
-                  <Html {...htmlProps}>{privateField.html}</Html>
-                </View>
-              ))}
+              {/*{privateInformation?.map((privateField) => (*/}
+              {/*  <View key={privateField.slug} style={styles.flexRowAlignStart}>*/}
+              {/*    <Text style={styles.bold}>*/}
+              {/*      {privateField.attributes.label}:&nbsp;*/}
+              {/*    </Text>*/}
+              {/*    <Html {...htmlProps}>{privateField.html}</Html>*/}
+              {/*  </View>*/}
+              {/*))}*/}
             </View>
             <View style={styles.section}>
               <View style={styles.sectionHeading}>
@@ -331,24 +331,24 @@ const PDF: React.FC<ResumePageProps> = (props) => {
               </View>
             ))}
           </View>
-          <View style={styles.section}>
-            {/*<View style={styles.sectionHeading}>*/}
-            {/*  <Image*/}
-            {/*    src={`${iconPath}/circle-pen-paintbrush.png`}*/}
-            {/*    style={styles.sectionHeadingIcon}*/}
-            {/*  />*/}
-            {/*  <Text>Hobbies &amp; Interests</Text>*/}
-            {/*</View>*/}
-            {/*<Html*/}
-            {/*  {...htmlProps}*/}
-            {/*  stylesheet={{*/}
-            {/*    ...htmlProps.stylesheet,*/}
-            {/*    p: { marginBottom: spacers[1] },*/}
-            {/*  }}*/}
-            {/*>*/}
-            {/*  {hobbies.html}*/}
-            {/*</Html>*/}
-          </View>
+          {/*<View style={styles.section}>*/}
+          {/*  <View style={styles.sectionHeading}>*/}
+          {/*    <Image*/}
+          {/*      src={`${iconPath}/circle-pen-paintbrush.png`}*/}
+          {/*      style={styles.sectionHeadingIcon}*/}
+          {/*    />*/}
+          {/*    <Text>Hobbies &amp; Interests</Text>*/}
+          {/*  </View>*/}
+          {/*  <Html*/}
+          {/*    {...htmlProps}*/}
+          {/*    stylesheet={{*/}
+          {/*      ...htmlProps.stylesheet,*/}
+          {/*      p: { marginBottom: spacers[1] },*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    {hobbies.html}*/}
+          {/*  </Html>*/}
+          {/*</View>*/}
         </View>
       </Page>
     </Document>
