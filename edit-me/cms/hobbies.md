@@ -4,11 +4,8 @@ I like keyboards. No, really. Check out [/r/mechanicalkeyboards](https://old.red
 
 Occasionally, I also like to tackle personal coding projects. Lately, I have been working on a bot that monitors Shopify websites and notifies me via Discord when inventory is re-stocked. The app is fully serverless on AWS (Lambda, DDB, etc.). I also occasionally like to study and practice algo-trading on QuantConnect.
 
-I like to read. I particularly enjoy works that heavily emphasize philosophy; for instance: Gene Wolfe's Book of the New
-Sun. Does this prove how smart I am?
+I like to read. I particularly enjoy works that heavily emphasize philosophy, such as Gene Wolfe's _Book of the New Sun_. Does this prove how smart I am?
 
-I also like to exercise. I particularly enjoy running. I am not a marathoner or anything like that, but I try to run a
-5K at least a few times per week. I also do some heavy lifting in the off seasons. I almost squatted 2x my body weight
-this year!
+I also like to exercise. I particularly enjoy running. I am not a marathoner or anything like that, but I try to run a 5K at least a few times per week. I also do some heavy lifting in the off seasons. I almost squatted 2x my body weight this year!
 
-I like to snowboard when it gets cold; although (unfortunately) nowadays I usually only make it to the slopes once per season. So little time!
+I like to snowboard when it gets cold, but nowadays I only make it to the slopes once or twice per season. So little time!

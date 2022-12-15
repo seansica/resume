@@ -4,4 +4,5 @@ completionYear: 2021
 institution: Boston University
 ---
 
-Graduated with a 3.7 GPA.
+- Magna Cum Laude
+- Graduated with a 3.7 GPA.

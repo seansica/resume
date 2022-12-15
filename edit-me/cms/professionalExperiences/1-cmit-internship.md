@@ -1,7 +1,7 @@
 ---
 startDate: Feb 2015
 endDate: Aug 2015
-organization: CMIT Solutions of Boston / Apogee IT Services
+organization: CMIT Boston / Apogee ITS
 title: Intern
 ---
 
