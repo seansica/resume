@@ -185,7 +185,7 @@ const htmlProps: Omit<HtmlProps, 'children'> = {
 const PDF: React.FC<ResumePageProps> = (props) => {
   const {
     education,
-    hobbies,
+    // hobbies,
     personalInformation,
     privateInformation,
     professional,
@@ -332,22 +332,22 @@ const PDF: React.FC<ResumePageProps> = (props) => {
             ))}
           </View>
           <View style={styles.section}>
-            <View style={styles.sectionHeading}>
-              <Image
-                src={`${iconPath}/circle-pen-paintbrush.png`}
-                style={styles.sectionHeadingIcon}
-              />
-              <Text>Hobbies &amp; Interests</Text>
-            </View>
-            <Html
-              {...htmlProps}
-              stylesheet={{
-                ...htmlProps.stylesheet,
-                p: { marginBottom: spacers[1] },
-              }}
-            >
-              {hobbies.html}
-            </Html>
+            {/*<View style={styles.sectionHeading}>*/}
+            {/*  <Image*/}
+            {/*    src={`${iconPath}/circle-pen-paintbrush.png`}*/}
+            {/*    style={styles.sectionHeadingIcon}*/}
+            {/*  />*/}
+            {/*  <Text>Hobbies &amp; Interests</Text>*/}
+            {/*</View>*/}
+            {/*<Html*/}
+            {/*  {...htmlProps}*/}
+            {/*  stylesheet={{*/}
+            {/*    ...htmlProps.stylesheet,*/}
+            {/*    p: { marginBottom: spacers[1] },*/}
+            {/*  }}*/}
+            {/*>*/}
+            {/*  {hobbies.html}*/}
+            {/*</Html>*/}
           </View>
         </View>
       </Page>
