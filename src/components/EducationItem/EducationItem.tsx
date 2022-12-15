@@ -5,6 +5,7 @@ import { CMSEducationalExperience } from '../../cms-integration/markdown/educati
 import Heading from '../../strum-design-system/components/Heading/Heading';
 import { atoms } from '../../strum-design-system/sprinkles.css';
 import { articleStyle } from '../Articles/article.css';
+import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 
 const EducationItem: React.FC<CMSEducationalExperience> = (props) => {
   return (
@@ -15,7 +16,14 @@ const EducationItem: React.FC<CMSEducationalExperience> = (props) => {
           className={atoms({ marginRight: 2 })}
           icon={faUniversity}
         />
-        {props.attributes.institution}
+        <b>{props.attributes.institution}</b>
+      </div>
+      <div>
+        <FontAwesomeIcon
+          className={atoms({ marginRight: 2 })}
+          icon={faCalendar}
+        />
+        Completed in {props.attributes.completionYear}
       </div>
       <div dangerouslySetInnerHTML={{ __html: props.html }} />
     </article>
