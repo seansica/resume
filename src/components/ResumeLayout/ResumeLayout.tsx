@@ -86,7 +86,7 @@ const ResumeLayout: React.FC<ResumePageProps> = (props) => {
           </Column>
           <Column>
             <Box marginBottom={6}>
-              <SectionHeader icon={faInstitution} text="Certs" />
+              <SectionHeader icon={faInstitution} text="Certifications" />
               {certs.map((experience) => (
                 <EducationItem key={experience.slug} {...experience} />
               ))}
