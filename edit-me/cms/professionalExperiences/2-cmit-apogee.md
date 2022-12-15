@@ -5,8 +5,7 @@ organization: CMIT Solutions of Boston / Apogee IT Services
 title: Network Engineer
 ---
 
-I did a lot of Field Engineering. The job role primarily entailed facilitating on-boarding new customers, executing gap
-analyses, and executing infrastructure refresh projects.
+**TL;DR**: I did a lot of field engineering: on-boarding new customers, executing gap analyses, and running infrastructure refresh projects.
 
 ### Responsibilities:
 

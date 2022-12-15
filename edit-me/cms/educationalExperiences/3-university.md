@@ -4,4 +4,4 @@ completionYear: 2021
 institution: Boston University
 ---
 
-Graduated with a 3.9 or something like that. I am very sm4rt.
+Graduated with a 3.7 GPA.

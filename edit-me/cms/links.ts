@@ -7,7 +7,7 @@ export const links: CMSLink[] = [
     title: 'GitHub',
   },
   {
-    href: 'https://www.linkedin.com/seansica',
+    href: 'https://www.linkedin.com/in/seansica',
     iconName: 'linkedin',
     title: 'LinkedIn',
   },

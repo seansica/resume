@@ -5,8 +5,7 @@ organization: CMIT Solutions of Boston / Apogee IT Services
 title: Intern
 ---
 
-I interned for 7 months. Right around the time I was hired full-time, the company merged with another MSP
-(based in Pittsburgh). The resultant company was called Apogee IT Solutions.
+Right around the time that my internship was converted to a full-time staff position, CMIT Solutions of Boston merged with another MSP; the resultant company was called Apogee IT Solutions.
 
 ### Responsibilities:
 

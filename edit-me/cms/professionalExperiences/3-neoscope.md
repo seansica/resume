@@ -5,4 +5,4 @@ organization: Neoscope
 title: Network/Systems Engineer
 ---
 
-This jobs largely entailed the same roles and responsibilities that I previously had at Apogee IT Services.
+**TL;DR**: This jobs largely entailed the same roles and responsibilities that I previously held at Apogee IT Services.
