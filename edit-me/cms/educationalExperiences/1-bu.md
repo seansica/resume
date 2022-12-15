@@ -1,5 +1,5 @@
 ---
-achievement: Computer Science, B.S.
+achievement: Bachelor of Science, Computer Science
 completionYear: 2021
 institution: Boston University
 ---
