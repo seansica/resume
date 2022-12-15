@@ -12,7 +12,7 @@
     "nextjs",
     "pdf"
   ],
-  "homepage": "https://github.com/colinhemphill/nextjs-resume-generator",
+  "homepage": "",
   "scripts": {
     "analyze": "ANALYZE=true next build",
     "build": "next build",
