@@ -267,7 +267,7 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                   </View>
                   <div>
                     <style>
-                      {`@media print { .pagebreak { page-break-before: always; } /* page-break-after works, as well */}`}
+                      {`@media print { .pagebreak { clear: both; page-break-after: always; } }`}
                     </style>
                   </div>
                 </>
