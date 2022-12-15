@@ -4,7 +4,19 @@ import { CMSLink } from '../../cms-integration/markdown/links';
 import { CMSPersonalInformation } from '../../cms-integration/markdown/personal';
 import { CMSProfessionalExperience } from '../../cms-integration/markdown/professional';
 import { CMSSkillCategory } from '../../cms-integration/markdown/skills';
+import { CMSCerts } from '../../cms-integration/markdown/certs';
 
+export const certs: CMSCerts[] = [
+  {
+    attributes: {
+      achievement: 'Certification',
+      completionYear: '2010',
+      institution: 'Cisco',
+    },
+    html: '<div>Test</div>',
+    slug: 'test',
+  },
+];
 export const educationalExperiences: CMSEducationalExperience[] = [
   {
     attributes: {
@@ -19,7 +31,7 @@ export const educationalExperiences: CMSEducationalExperience[] = [
 
 export const links: CMSLink[] = [
   {
-    href: 'https://github.com/colinhemphill',
+    href: 'https://github.com/seansica',
     iconName: 'github',
     title: 'GitHub',
   },
