@@ -1,3 +1,14 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Neque viverra justo nec ultrices. Urna nunc id cursus metus aliquam eleifend mi in nulla. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
+I spend most of my time hanging out with my wife and my crazy golden retriever, Link. He loves to bark at invisible things and do zoomies around the yard.
 
-All Markdown files will be rendered as rich text, so you can include features such as [links](#).
+I like keyboards. No, really. Check out [/r/mechanicalkeyboards](https://old.reddit.com/r/MechanicalKeyboards/) or come say hi on the [ConicalKeyboards](https://conicalkeyboards.com/) Discord server. I have built several custom keyboards. I am currently working on a project that involves designing a custom case in CAD and commissioning it through a CNC manufacturing shop.
+
+Occasionally, I also like to tackle personal coding projects. Lately, I have been working on a bot that monitors Shopify websites and notifies me via Discord when inventory is re-stocked. The app is fully serverless on AWS (Lambda, DDB, etc.). I also occasionally like to study and practice algo-trading on QuantConnect.
+
+I like to read. I particularly enjoy works that heavily emphasize philosophy; for instance: Gene Wolfe's Book of the New
+Sun. Does this prove how smart I am?
+
+I also like to exercise. I particularly enjoy running. I am not a marathoner or anything like that, but I try to run a
+5K at least a few times per week. I also do some heavy lifting in the off seasons. I almost squatted 2x my body weight
+this year!
+
+I like to snowboard when it gets cold; although (unfortunately) nowadays I usually only make it to the slopes once per season. So little time!

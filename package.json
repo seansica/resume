@@ -2,9 +2,9 @@
   "name": "next-resume-generator",
   "version": "2.0.6",
   "author": {
-    "name": "Colin Hemphill",
-    "email": "colin@colinhemphill.com",
-    "url": "https://colinhemphill.com"
+    "name": "Sean Sica",
+    "email": "sean@sica.io",
+    "url": "https://github.com/seansica"
   },
   "keywords": [
     "resume",
@@ -21,7 +21,7 @@
     "format": "prettier --write 'src/**/*.{json,js,ts,tsx}'",
     "lint": "next lint",
     "prepare": "husky install && npm run copy",
-    "start": "next start",
+    "start": "next start -p 3002",
     "test": "jest",
     "test:staged": "jest  --updateSnapshot --onlyChanged",
     "test:update": "jest --updateSnapshot",
