@@ -15,6 +15,7 @@ import { getFullName } from '../../helpers/utils';
 import { ResumePageProps } from '../../pages';
 import colors from '../../strum-design-system/themes/timbre/colors';
 import spacers from '../../strum-design-system/themes/timbre/spacers';
+import UnorderedList from '../../strum-design-system/components/Nav/UnorderedList';
 
 const domain = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -59,6 +60,10 @@ const fontSizes = {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 10,
+  },
   page: {
     alignItems: 'stretch',
     backgroundColor: colors.white,
@@ -134,7 +139,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'row',
-    fontSize: fontSizes.s,
+    fontSize: fontSizes.xs,
     fontWeight: 700,
     marginBottom: spacers[1],
     marginTop: spacers[3],
@@ -161,6 +166,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacers[1],
   },
   bold: { fontWeight: 700 },
+  italics: { fontStyle: 'italic' },
   flexColumn: { display: 'flex', flexDirection: 'column' },
   flexRow: { alignItems: 'center', display: 'flex', flexDirection: 'row' },
   flexRowAlignStart: {
@@ -184,6 +190,7 @@ const htmlProps: Omit<HtmlProps, 'children'> = {
 
 const PDF: React.FC<ResumePageProps> = (props) => {
   const {
+    certs,
     education,
     // hobbies,
     personalInformation,
@@ -255,7 +262,7 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                         (star, starIndex) => (
                           <Image
                             key={starIndex}
-                            src={`${iconPath}/star-yellow.png`}
+                            src={`${iconPath}/star.png`}
                             style={styles.sectionHeadingStar}
                           />
                         ),
@@ -300,7 +307,15 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                       : 'Current'}
                   </Text>
                 </View>
-                <Html {...htmlProps}>{professionalExperience.html}</Html>
+
+                <Text>
+                  {professionalExperience.attributes.pdfHighlight
+                    ? professionalExperience.attributes.pdfHighlight
+                    : null}
+                </Text>
+
+                {/*<Html {...htmlProps}>{professionalExperience.html}</Html>*/}
+
                 {/*<div>*/}
                 {/* TODO delete this page break div - it does not work */}
                 {/*  <style>*/}
@@ -331,12 +346,51 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                     style={styles.itemSubheadingIcon}
                   />
                   <Text style={styles.itemSubheading}>
-                    {educationExperience.attributes.institution}
+                    {educationExperience.attributes.institution} - Completed{' '}
+                    {educationExperience.attributes.completionYear}
                   </Text>
                 </View>
-                <Html {...htmlProps}>{educationExperience.html}</Html>
+                {/*<Html {...htmlProps}>{educationExperience.html}</Html>*/}
               </View>
             ))}
+          </View>
+          <View style={styles.section}>
+            <View style={styles.sectionHeading}>
+              <Image
+                src={`${iconPath}/circle-briefcase.png`}
+                style={styles.sectionHeadingIcon}
+              />
+              <Text>Certifications</Text>
+            </View>
+            <View>
+              <UnorderedList>
+                {certs.map((cert) => (
+                  <View key={cert.slug}>
+                    {/*<NavListItem>*/}
+                    {/*  */}
+                    {/*</NavListItem>*/}
+                    {/*<div className="row">*/}
+                    {/*  <Text style={{...styles.bold, display: "flex", flexDirection: "row"}}>*/}
+                    {/*    {cert.attributes.achievement}*/}
+                    {/*  </Text>*/}
+                    {/*  <Text> - Completed {cert.attributes.completionYear}</Text>*/}
+                    {/*</div>*/}
+                    <View style={[styles.container, { flexDirection: 'row' }]}>
+                      <View style={{ display: 'flex', marginRight: 5 }}>
+                        <Text style={styles.bold}>
+                          {cert.attributes.achievement}
+                        </Text>
+                      </View>
+                      <View style={{ display: 'flex' }}>
+                        <Text style={styles.italics}>
+                          Completed - {cert.attributes.completionYear}
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                ))}
+              </UnorderedList>
+            </View>
           </View>
           {/* TODO either make the privateInfo section toggleable or remove it altogether */}
           {/*<View style={styles.section}>*/}
