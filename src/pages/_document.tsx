@@ -21,6 +21,8 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
             rel="stylesheet"
           />
+          <base target="_blank" />{' '}
+          {/* Forces all hyperlinks to open in new tab */}
         </Head>
         <body className={timbre}>
           <Main />
