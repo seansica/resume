@@ -247,23 +247,30 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                 <Text>Skills &amp; Expertise</Text>
               </View>
               {skills.map((skill, skillIndex) => (
-                <View key={skill.slug}>
-                  <View style={styles.itemHeading}>
-                    <View style={styles.sectionHeadingStars}>
-                      {Array.from(Array(skills.length - skillIndex)).map(
-                        (star, starIndex) => (
-                          <Image
-                            key={starIndex}
-                            src={`${iconPath}/star-yellow.png`}
-                            style={styles.sectionHeadingStar}
-                          />
-                        ),
-                      )}
+                <>
+                  <View key={skill.slug}>
+                    <View style={styles.itemHeading}>
+                      <View style={styles.sectionHeadingStars}>
+                        {Array.from(Array(skills.length - skillIndex)).map(
+                          (star, starIndex) => (
+                            <Image
+                              key={starIndex}
+                              src={`${iconPath}/star-yellow.png`}
+                              style={styles.sectionHeadingStar}
+                            />
+                          ),
+                        )}
+                      </View>
+                      <Text style={styles.bold}>{skill.attributes.title}</Text>
                     </View>
-                    <Text style={styles.bold}>{skill.attributes.title}</Text>
+                    <Html {...htmlProps}>{skill.html}</Html>
                   </View>
-                  <Html {...htmlProps}>{skill.html}</Html>
-                </View>
+                  <div>
+                    <style>
+                      {`@media print { .pagebreak { page-break-before: always; } /* page-break-after works, as well */}`}
+                    </style>
+                  </div>
+                </>
               ))}
             </View>
           </View>
