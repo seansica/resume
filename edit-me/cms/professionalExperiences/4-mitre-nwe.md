@@ -3,6 +3,7 @@ startDate: Nov 2018
 endDate: Aug 2021
 organization: The MITRE Corporation
 title: Senior Network Engineer
+pdfHighlight: Served as SME for corporate data center SDN fabric (Cisco ACI). Drove corporate culture shift towards NetDevOps principles.
 ---
 
 **Responsibilities**:

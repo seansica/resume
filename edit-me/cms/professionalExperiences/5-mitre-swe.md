@@ -2,6 +2,7 @@
 startDate: Aug 2021
 organization: The MITRE Corporation
 title: Senior Software Systems Engineer
+pdfHighlight: Develop and maintain software that supports the MITRE ATT&CK© cyber-security researchers and content creators. Provide software engineering and DevOps expertise, working alongside ML experts to develop facial recognition software.
 ---
 
 I currently work in the 'MITRE Labs' division as a software engineer. I have worked on the following projects since joining MITRE Labs in mid-2021:
