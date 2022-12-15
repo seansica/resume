@@ -229,6 +229,7 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                 <Text style={styles.bold}>Location:</Text>
                 <Text>&nbsp;{personalInformation.attributes.location}</Text>
               </View>
+              {/* TODO fix the email hyperlink rendering issue then uncomment this */}
               {/*{privateInformation?.map((privateField) => (*/}
               {/*  <View key={privateField.slug} style={styles.flexRowAlignStart}>*/}
               {/*    <Text style={styles.bold}>*/}
@@ -300,11 +301,12 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                   </Text>
                 </View>
                 <Html {...htmlProps}>{professionalExperience.html}</Html>
-                <div>
-                  <style>
-                    {`@media print { .pagebreak { clear: both; page-break-after: always; } }`}
-                  </style>
-                </div>
+                {/*<div>*/}
+                {/* TODO delete this page break div - it does not work */}
+                {/*  <style>*/}
+                {/*    {`@media print { .pagebreak { clear: both; page-break-after: always; } }`}*/}
+                {/*  </style>*/}
+                {/*</div>*/}
               </View>
             ))}
           </View>
@@ -336,6 +338,7 @@ const PDF: React.FC<ResumePageProps> = (props) => {
               </View>
             ))}
           </View>
+          {/* TODO either make the privateInfo section toggleable or remove it altogether */}
           {/*<View style={styles.section}>*/}
           {/*  <View style={styles.sectionHeading}>*/}
           {/*    <Image*/}
