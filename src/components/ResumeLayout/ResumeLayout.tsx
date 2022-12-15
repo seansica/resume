@@ -1,6 +1,7 @@
 import {
   faBriefcase,
   faGraduationCap,
+  faInstitution,
 } from '@fortawesome/free-solid-svg-icons';
 import indefinite from 'indefinite';
 import React from 'react';
@@ -23,6 +24,7 @@ import Skills from '../Skills/Skills';
 
 const ResumeLayout: React.FC<ResumePageProps> = (props) => {
   const {
+    certs,
     education,
     hobbies,
     links,
@@ -72,13 +74,25 @@ const ResumeLayout: React.FC<ResumePageProps> = (props) => {
       </Section>
 
       <Section color="standard">
-        <Box marginBottom={6}>
-          <SectionHeader icon={faGraduationCap} text="Education" />
-        </Box>
+        <Row>
+          <Column>
+            <Box marginBottom={6}>
+              <SectionHeader icon={faGraduationCap} text="Education" />
+            </Box>
 
-        {education.map((experience) => (
-          <EducationItem key={experience.slug} {...experience} />
-        ))}
+            {education.map((experience) => (
+              <EducationItem key={experience.slug} {...experience} />
+            ))}
+          </Column>
+          <Column>
+            <Box marginBottom={6}>
+              <SectionHeader icon={faInstitution} text="Certs" />
+              {certs.map((experience) => (
+                <EducationItem key={experience.slug} {...experience} />
+              ))}
+            </Box>
+          </Column>
+        </Row>
       </Section>
 
       <Section color="alternate">
