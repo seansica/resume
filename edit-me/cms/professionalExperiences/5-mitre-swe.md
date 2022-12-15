@@ -10,7 +10,7 @@ I currently work in the 'MITRE Labs' division as a software engineer. I have wor
 
 - Develop and maintain software which supports the MITRE ATT&CK© cyber-security researchers and content creators.
 - Provide software maintenance/support to various open-source projects listed under the [mitre-attack](https://github.com/mitre-attack) and [center-for-threat-informed-defense](https://github.com/center-for-threat-informed-defense) organizations on GitHub.
-- Designed and implemented the [ATT&CK© Workbench TAXII Server](https://github.com/mitre-attack/attack-workbench-taxii-server), a [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html)–compliant REST API built with Nodejs and Docker.
+- Designed and implemented the [ATT&CK© Workbench TAXII Server](https://github.com/mitre-attack/attack-workbench-taxii-server), a [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html)–compliant REST API built with Node.js and Docker.
 
 #### Other Work
 
