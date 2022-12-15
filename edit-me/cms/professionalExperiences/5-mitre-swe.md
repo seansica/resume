@@ -14,7 +14,7 @@ I currently work in the 'MITRE Labs' division as a software engineer. I have wor
 
 #### Other Work
 
-- Provide software engineering and DevOps expertise alongside ML experts to develop facial recognition software.
+- Provide software engineering and DevOps expertise, working alongside ML experts to develop facial recognition software.
 - Maintain and develop web service (Spring Boot and Angular) for facial recognition software.
 - Refactor application from mono-repo monolith to a microservices poly-repo paradigm.
 - Implement CI/CD to automatically build, publish, and deploy poly-repo modules.
