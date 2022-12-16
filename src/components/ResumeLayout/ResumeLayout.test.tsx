@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  certs,
   educationalExperiences,
   hobbies,
   links,
@@ -20,6 +21,7 @@ describe('<ResumeLayout />', () => {
   it('Matches the snapshot', () => {
     const { container } = render(
       <ResumeLayout
+        certs={certs}
         education={educationalExperiences}
         hobbies={hobbies}
         links={links}

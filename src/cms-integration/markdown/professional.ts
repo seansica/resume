@@ -9,6 +9,7 @@ export interface ProfessionalExperienceMarkdownAttributes {
   endDate?: string;
   startDate: string;
   title: string;
+  pdfHighlight?: string;
 }
 
 export interface CMSProfessionalExperience {
