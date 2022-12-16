@@ -18,6 +18,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   }
 
   const {
+    certs,
     education,
     hobbies,
     links,
@@ -29,6 +30,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
   return {
     props: {
+      certs,
       education,
       hobbies,
       links,
