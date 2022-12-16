@@ -237,13 +237,38 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                 <Text style={styles.bold}>Location:</Text>
                 <Text>&nbsp;{personalInformation.attributes.location}</Text>
               </View>
-              {/* TODO fix the email hyperlink rendering issue then uncomment this */}
+              {/*TODO fix the email hyperlink rendering issue then uncomment this */}
               {/*{privateInformation?.map((privateField) => (*/}
               {/*  <View key={privateField.slug} style={styles.flexRowAlignStart}>*/}
-              {/*    <Text style={styles.bold}>*/}
-              {/*      {privateField.attributes.label}:&nbsp;*/}
-              {/*    </Text>*/}
-              {/*    <Html {...htmlProps}>{privateField.html}</Html>*/}
+              {/*    {privateField.attributes.label === 'Email'*/}
+              {/*        ?*/}
+              {/*        <>*/}
+              {/*          <View style={styles.flexRow}>*/}
+              {/*            <Text style={styles.bold}>*/}
+              {/*              {privateField.attributes.label}:&nbsp;*/}
+              {/*            </Text>*/}
+              {/*          </View>*/}
+              {/*          <Html*/}
+              {/*              {...htmlProps}>{privateField.html}*/}
+              {/*          </Html>*/}
+              {/*        </>*/}
+              {/*        :*/}
+              {/*        privateField.attributes.label !== 'Address'*/}
+              {/*            ?*/}
+              {/*            <>*/}
+              {/*              <View style={styles.flexRow}>*/}
+              {/*                <Text style={styles.bold}>*/}
+              {/*                  {privateField.attributes.label}:&nbsp;*/}
+              {/*                </Text>*/}
+              {/*              </View>*/}
+              {/*              <Html*/}
+              {/*                  {...htmlProps}>{privateField.html}*/}
+              {/*              </Html>*/}
+              {/*            </>*/}
+
+              {/*            : null*/}
+              {/*    }*/}
+              {/*    /!*<Html {...htmlProps}>{privateField.html}</Html>*!/*/}
               {/*  </View>*/}
               {/*))}*/}
             </View>
@@ -308,21 +333,11 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                       : 'Current'}
                   </Text>
                 </View>
-
                 <Text>
                   {professionalExperience.attributes.pdfHighlight
                     ? professionalExperience.attributes.pdfHighlight
                     : null}
                 </Text>
-
-                {/*<Html {...htmlProps}>{professionalExperience.html}</Html>*/}
-
-                {/*<div>*/}
-                {/* TODO delete this page break div - it does not work */}
-                {/*  <style>*/}
-                {/*    {`@media print { .pagebreak { clear: both; page-break-after: always; } }`}*/}
-                {/*  </style>*/}
-                {/*</div>*/}
               </View>
             ))}
           </View>
