@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
+    paddingLeft: 0,
   },
   page: {
     alignItems: 'stretch',
@@ -333,6 +334,7 @@ const PDF: React.FC<ResumePageProps> = (props) => {
               />
               <Text>Education</Text>
             </View>
+
             {education.map((educationExperience) => (
               <View key={educationExperience.slug}>
                 <View style={styles.itemHeading}>
@@ -340,17 +342,38 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                     {educationExperience.attributes.achievement}
                   </Text>
                 </View>
-                <View style={styles.itemSubheadingRow}>
-                  <Image
-                    src={`${iconPath}/university.png`}
-                    style={styles.itemSubheadingIcon}
-                  />
-                  <Text style={styles.itemSubheading}>
-                    {educationExperience.attributes.institution} - Completed{' '}
-                    {educationExperience.attributes.completionYear}
-                  </Text>
+                <View style={[styles.container, { flexDirection: 'row' }]}>
+                  <View
+                    style={{ ...styles.itemSubheadingRow, display: 'flex' }}
+                  >
+                    <Image
+                      src={`${iconPath}/university.png`}
+                      style={styles.itemSubheadingIcon}
+                    />
+                  </View>
+                  <View
+                    style={{
+                      ...styles.itemSubheadingRow,
+                      ...styles.bold,
+                      display: 'flex',
+                      marginRight: 5,
+                    }}
+                  >
+                    <Text>{educationExperience.attributes.institution}</Text>
+                  </View>
+                  <View
+                    style={{
+                      ...styles.itemSubheadingRow,
+                      ...styles.italics,
+                      display: 'flex',
+                    }}
+                  >
+                    <Text>
+                      {'Completed '}
+                      {educationExperience.attributes.completionYear}
+                    </Text>
+                  </View>
                 </View>
-                {/*<Html {...htmlProps}>{educationExperience.html}</Html>*/}
               </View>
             ))}
           </View>
@@ -362,35 +385,51 @@ const PDF: React.FC<ResumePageProps> = (props) => {
               />
               <Text>Certifications</Text>
             </View>
-            <View>
-              <UnorderedList>
-                {certs.map((cert) => (
-                  <View key={cert.slug}>
-                    {/*<NavListItem>*/}
-                    {/*  */}
-                    {/*</NavListItem>*/}
-                    {/*<div className="row">*/}
-                    {/*  <Text style={{...styles.bold, display: "flex", flexDirection: "row"}}>*/}
-                    {/*    {cert.attributes.achievement}*/}
-                    {/*  </Text>*/}
-                    {/*  <Text> - Completed {cert.attributes.completionYear}</Text>*/}
-                    {/*</div>*/}
-                    <View style={[styles.container, { flexDirection: 'row' }]}>
-                      <View style={{ display: 'flex', marginRight: 5 }}>
-                        <Text style={styles.bold}>
-                          {cert.attributes.achievement}
-                        </Text>
-                      </View>
-                      <View style={{ display: 'flex' }}>
-                        <Text style={styles.italics}>
-                          Completed - {cert.attributes.completionYear}
-                        </Text>
-                      </View>
-                    </View>
-                  </View>
-                ))}
-              </UnorderedList>
-            </View>
+            {certs.map((cert) => (
+              <View
+                key={cert.slug}
+                style={[styles.container, { flexDirection: 'row' }]}
+              >
+                <Text
+                  style={{ ...styles.bold, display: 'flex', marginRight: 5 }}
+                >
+                  {cert.attributes.achievement}
+                </Text>
+                <Text style={{ ...styles.italics, display: 'flex' }}>
+                  {'Completed '}
+                  {cert.attributes.completionYear}
+                </Text>
+              </View>
+            ))}
+            {/*<View>*/}
+            {/*  <UnorderedList>*/}
+            {/*    {certs.map((cert) => (*/}
+            {/*      <View key={cert.slug}>*/}
+            {/*        /!*<NavListItem>*!/*/}
+            {/*        /!*  *!/*/}
+            {/*        /!*</NavListItem>*!/*/}
+            {/*        /!*<div className="row">*!/*/}
+            {/*        /!*  <Text style={{...styles.bold, display: "flex", flexDirection: "row"}}>*!/*/}
+            {/*        /!*    {cert.attributes.achievement}*!/*/}
+            {/*        /!*  </Text>*!/*/}
+            {/*        /!*  <Text> - Completed {cert.attributes.completionYear}</Text>*!/*/}
+            {/*        /!*</div>*!/*/}
+            {/*        <View style={[styles.container, { flexDirection: 'row' }]}>*/}
+            {/*          <View style={{ display: 'flex', marginRight: 5 }}>*/}
+            {/*            <Text style={styles.bold}>*/}
+            {/*              {cert.attributes.achievement}*/}
+            {/*            </Text>*/}
+            {/*          </View>*/}
+            {/*          <View style={{ display: 'flex' }}>*/}
+            {/*            <Text style={styles.italics}>*/}
+            {/*              Completed - {cert.attributes.completionYear}*/}
+            {/*            </Text>*/}
+            {/*          </View>*/}
+            {/*        </View>*/}
+            {/*      </View>*/}
+            {/*    ))}*/}
+            {/*  </UnorderedList>*/}
+            {/*</View>*/}
           </View>
           {/* TODO either make the privateInfo section toggleable or remove it altogether */}
           {/*<View style={styles.section}>*/}
