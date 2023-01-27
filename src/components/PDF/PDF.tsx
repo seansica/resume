@@ -59,6 +59,7 @@ const fontSizes = {
   xxs: 10,
 };
 
+// @ts-ignore
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -178,6 +179,23 @@ const styles = StyleSheet.create({
   a: {
     color: colors.primary,
     textDecoration: 'underline',
+  },
+  listContainer: {
+    flexDirection: 'column',
+    //@ts-ignore
+    marginStart: '10',
+  },
+  listItemContainer: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+  },
+  bulletPoint: {
+    //@ts-ignore
+    marginStart: '10',
+  },
+  listItem: {
+    //@ts-ignore
+    marginStart: '10',
   },
 });
 
@@ -333,11 +351,38 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                       : 'Current'}
                   </Text>
                 </View>
-                <Text>
-                  {professionalExperience.attributes.pdfHighlight
-                    ? professionalExperience.attributes.pdfHighlight
-                    : null}
-                </Text>
+                <View style={styles.listContainer}>
+                  {professionalExperience.attributes.pdfHighlight1 ? (
+                    <>
+                      <View style={styles.listItemContainer}>
+                        <Text style={styles.bulletPoint}>• </Text>
+                        <Text style={styles.listItem}>
+                          {professionalExperience.attributes.pdfHighlight1}
+                        </Text>
+                      </View>
+                    </>
+                  ) : null}
+                  {professionalExperience.attributes.pdfHighlight2 ? (
+                    <>
+                      <View style={styles.listItemContainer}>
+                        <Text style={styles.bulletPoint}>• </Text>
+                        <Text style={styles.listItem}>
+                          {professionalExperience.attributes.pdfHighlight2}
+                        </Text>
+                      </View>
+                    </>
+                  ) : null}
+                  {professionalExperience.attributes.pdfHighlight3 ? (
+                    <>
+                      <View style={styles.listItemContainer}>
+                        <Text style={styles.bulletPoint}>• </Text>
+                        <Text style={styles.listItem}>
+                          {professionalExperience.attributes.pdfHighlight3}
+                        </Text>
+                      </View>
+                    </>
+                  ) : null}
+                </View>
               </View>
             ))}
           </View>
