@@ -2,28 +2,10 @@
 startDate: Aug 2021
 organization: The MITRE Corporation
 title: Senior Software Systems Engineer
-pdfHighlight: Develop and maintain software that supports the MITRE ATT&CK© cyber-security researchers and content creators. Provide software engineering and DevOps expertise, working alongside ML experts to develop facial recognition software.
+pdfHighlight1: Building and maintaining open-source web applications that enable ATT&CK© researchers to store, organize, and publish cyber threat intelligence.
+pdfHighlight2: Leading the modernization of a legacy web application with renewed sponsor interest.
 ---
 
-I currently work in the 'MITRE Labs' division as a software engineer. I have worked on the following projects since joining MITRE Labs in mid-2021:
-
-<br/>
-
-**MITRE ATT&CK©**:
-
-- Develop and maintain software that supports the MITRE ATT&CK© cyber-security researchers and content creators.
-- Provide software maintenance/support to various open-source projects listed under the [mitre-attack](https://github.com/mitre-attack) and [center-for-threat-informed-defense](https://github.com/center-for-threat-informed-defense) organizations on GitHub.
-- Designed and implemented the [ATT&CK© Workbench TAXII Server](https://github.com/mitre-attack/attack-workbench-taxii-server), a [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html)–compliant REST API built with Node.js and Docker.
-
-**Other Work**:
-
-- Provide software engineering and DevOps expertise, working alongside ML experts to develop facial recognition software.
-- Maintain and develop web service (Spring Boot and Angular) for facial recognition software.
-- Refactor application from mono-repo monolith to a microservices poly-repo paradigm.
-- Implement CI/CD to automatically build, publish, and deploy poly-repo modules.
-
-**MITRE Engineering Platform**:
-
-- Briefly operated as a key stakeholder and task lead on an effort focused on developing internal enterprise tools.
-- Had roughly 15 direct reports.
-- Architected MITRE's internal 'Knowledge Sharing' platform.
+- Building and maintaining software applications that enable ATT&CK© researchers to store, organize, and publish tens of thousands of cyber threat intelligence nodes in a complex directed acyclic graph, optimizing data management and retrieval for efficient threat analysis and reporting.
+- Modernized a legacy web application utilizing facial recognition and morphing technologies, chartered a comprehensive road map for evolving the application, and implemented a polyrepo architecture with integrated CI/CD, resulting in increased developer efficiency and parallel development capabilities.
+- Designed and implemented the [ATT&CK© Workbench TAXII Server](https://github.com/mitre-attack/attack-workbench-taxii-server), a [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html)–compliant REST API built with NodeJS and Docker.

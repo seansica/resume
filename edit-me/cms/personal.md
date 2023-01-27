@@ -5,4 +5,4 @@ givenName: Sean
 title: Sr. Software Systems Engineer
 ---
 
-I am a jack-of-all-trades engineer with an active DoD secret clearance. I have an extensive background in IT Operations, network engineering, and DevOps. I have nearly a decade of technology experience, spread between MSPs, Corporate IT, and software engineering. Since completing my B.S. in computer science, I've primarily focused on backend web development (REST APIs & distributed services).
+A highly experienced IT professional with 7 years of experience in operations, network engineering, and DevOps as well as 2 years in software engineering, seeking to leverage skills in distributed systems and cloud technology to work on back-end infrastructure at scale. Holds an active Department of Defense (DoD) secret clearance.
