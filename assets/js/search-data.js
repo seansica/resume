@@ -4,38 +4,38 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "About",
+    title: "about",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-research",
-          title: "Research",
+          title: "research",
           description: "Selected publications and ongoing research work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-resume",
-          title: "Resume",
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Selected engineering and research projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
           description: "Professional experience, education, and selected projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-personal",
-          title: "Personal",
+          title: "personal",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/personal/";
-          },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "Selected engineering and research projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
           },
         },{id: "news-started-the-master-of-information-and-data-science-program-at-uc-berkeley",
           title: 'Started the Master of Information and Data Science program at UC Berkeley.',
