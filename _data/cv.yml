@@ -102,22 +102,22 @@ cv:
 
     Skills:
       - name: ML & Interpretability
-        level: ""
+        # level: ""
         icon: fa-solid fa-brain
         keywords: "PyTorch, TransformerLens, SAELens, NNSight, Sparse Autoencoders, DeepSpeed, LangChain"
 
       - name: Languages
-        level: ""
+        # level: ""
         icon: fa-solid fa-code
         keywords: "Python, TypeScript, JavaScript, Java, SQL"
 
       - name: Infrastructure & MLOps
-        level: ""
+        # level: ""
         icon: fa-solid fa-server
         keywords: "Docker, Kubernetes, Slurm, AWS, MongoDB, PostgreSQL"
 
       - name: Frameworks
-        level: ""
+        # level: ""
         icon: fa-solid fa-layer-group
         keywords: "Express.js, Nest.js, Spring Boot, Next.js, React"
 
