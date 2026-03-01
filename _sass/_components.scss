@@ -259,3 +259,80 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+// Project detail card layout (ATT&CK + Berkeley MIDS)
+.attack-project,
+.mids-project {
+  h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.45rem;
+  }
+
+  .attack-contrib-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-bottom: 1.25rem;
+  }
+
+  .attack-card {
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-left: 5px solid var(--global-theme-color);
+    border-radius: 0.5rem;
+    padding: 1rem 1.1rem;
+
+    h3 {
+      font-size: 1.18rem;
+      margin: 0 0 0.45rem;
+      color: var(--global-text-color);
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .attack-card-model {
+    border-left-color: #2c7be5;
+  }
+
+  .attack-card-search {
+    border-left-color: #00a86b;
+  }
+
+  .attack-card-taxii {
+    border-left-color: #f0a202;
+  }
+
+  .attack-card-api {
+    border-left-color: #d1495b;
+  }
+
+  .attack-card-python {
+    border-left-color: #6f42c1;
+  }
+
+  .mids-card-capstone {
+    border-left-color: #2c7be5;
+  }
+
+  .mids-card-nlp {
+    border-left-color: #00a86b;
+  }
+
+  .mids-card-genai {
+    border-left-color: #d1495b;
+  }
+}
+
+@media (min-width: 768px) {
+  .attack-project,
+  .mids-project {
+    .attack-contrib-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}

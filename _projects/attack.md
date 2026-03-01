@@ -6,36 +6,48 @@ importance: 2
 category: engineering
 ---
 
-## Overview
+<div class="attack-project">
 
-[MITRE ATT&CK](https://attack.mitre.org/) is a globally-accessible knowledge base of adversary tactics and techniques, used by thousands of organizations for threat modeling, detection engineering, and security operations. I lead the software engineering team responsible for the tools and infrastructure that power ATT&CK's data distribution and community adoption.
+<p>
+  <a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> is a globally-accessible knowledge base of adversary tactics and techniques, used by thousands of organizations for threat modeling, detection engineering, and security operations. I help lead the software engineering team responsible for the tools and infrastructure that power ATT&amp;CK's data distribution and community adoption.
+</p>
 
-## Technical Contributions
+<h2>Technical Contributions</h2>
 
-### ATT&CK Data Model
+<div class="attack-contrib-grid">
+  <section class="attack-card attack-card-model">
+    <h3><a href="https://github.com/mitre-attack/attack-data-model">ATT&amp;CK Data Model</a></h3>
+    <p>
+      Authored the <strong>first codified expression of the ATT&CK taxonomy</strong>, a TypeScript library that formalizes the ATT&CK data model and enables type-safe programmatic access to ATT&CK content.
+    </p>
+  </section>
 
-Authored the **first codified expression of the ATT&CK taxonomy** — a TypeScript library that formalizes the ATT&CK data model, enabling type-safe programmatic access to ATT&CK content. This library underpins multiple downstream tools and integrations.
+  <section class="attack-card attack-card-search">
+    <h3><a href="https://github.com/mitre-attack/attack-website/tree/master">ATT&amp;CK Website</a></h3>
+    <p>
+      Designed and implemented client-side search for <a href="https://attack.mitre.org/">attack.mitre.org</a>. The search runs entirely in-browser using <a href="https://github.com/nextapps-de/flexsearch">FlexSearch</a>, with precomputed indexes and IndexedDB-backed lookups for fast, offline-capable queries.
+    </p>
+  </section>
 
-### ATT&CK Website Search
+  <section class="attack-card attack-card-taxii">
+    <h3><a href="https://github.com/mitre-attack/attack-workbench-taxii-server/tree/main">TAXII 2.1 Server</a></h3>
+    <p>
+      Designed, deployed, and maintain the production <a href="https://attack-taxii.mitre.org/">ATT&amp;CK TAXII 2.1 server</a>, which serves ATT&amp;CK data in STIX format to automated threat intelligence platforms worldwide.
+    </p>
+  </section>
 
-Designed and implemented the **client-side search** for [attack.mitre.org](https://attack.mitre.org/). The search runs entirely in the browser with no backend search engine — it uses [FlexSearch](https://github.com/nicext/flexsearch) to precompute a search index at build time and stores index-to-page mappings in the browser's IndexedDB for fast, offline-capable lookups.
+  <section class="attack-card attack-card-api">
+    <h3><a href="https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api">ATT&amp;CK Workbench REST API</a></h3>
+    <p>
+      Primary developer for the <a href="https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api">ATT&amp;CK Workbench REST API</a>. I inherited and refactored the codebase for extensibility and am currently implementing release tracks to support more frequent publication.
+    </p>
+  </section>
 
-### TAXII 2.1 Server
-
-Designed, deployed, and maintain the **production ATT&CK TAXII 2.1 server** ([attack-taxii.mitre.org](https://attack-taxii.mitre.org)), a REST API that serves ATT&CK data in the STIX format to automated threat intelligence platforms worldwide.
-
-### ATT&CK Workbench REST API
-
-Primary developer for the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api). Inherited and refactored the entire codebase for extensibility. Currently implementing **release tracks** (in beta) — a new publishing model that will enable the ATT&CK team to release content more frequently, a significant operational improvement for the framework's consumers.
-
-### mitreattack-python
-
-Maintain the [mitreattack-python](https://github.com/mitre-attack/mitreattack-python) library (published on PyPI). Currently leading a major refactor with plans to implement Pydantic schemas mirroring the Zod schemas in the ATT&CK Data Model — working toward a single-source-of-truth schema definition that can generate typed models for both Python and TypeScript.
-
-## Engineering at Scale
-
-Leading ATT&CK's software has been an exercise in large-scale open-source stewardship:
-- Managing community contributions, issue triage, and release cycles across multiple repositories
-- Designing APIs and data models consumed by security teams globally
-- Building CI/CD pipelines, testing infrastructure, and deployment automation
-- Balancing backward compatibility with a rapidly evolving knowledge base
+  <section class="attack-card attack-card-python">
+    <h3>mitreattack-python</h3>
+    <p>
+      Maintain the <a href="https://github.com/mitre-attack/mitreattack-python">mitreattack-python</a> library (published on PyPI). I am leading a refactor to align Python models with the ATT&amp;CK Data Model's TypeScript schemas for stronger cross-language consistency.
+    </p>
+  </section>
+</div>
+</div>

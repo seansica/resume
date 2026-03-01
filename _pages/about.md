@@ -23,7 +23,7 @@ latest_posts:
   enabled: false
 ---
 
-I’m a research engineer working at the intersection of **mechanistic interpretability**, **AI safety**, and **cybersecurity**.
+I’m a research engineer working at the intersection of **AI safety** and **cybersecurity**.
 
 At [MITRE](https://www.mitre.org/), I help lead software development for [MITRE ATT&CK](https://attack.mitre.org/) and contribute to research on [Judy](https://www.mitre.org/news-insights/impact-story/naming-supercomputer-mitre-honors-early-innovator), the supercomputing platform powering the [Federal AI Sandbox](https://www.mitre.org/focus-areas/artificial-intelligence/federal-ai-sandbox).
 
@@ -31,4 +31,6 @@ In 2025, I focused on sparse autoencoders, representation shift under fine-tunin
 
 I bring 5+ years of experience shipping production software across distributed infrastructure, APIs, open-source tooling, and Kubernetes-based systems.
 
-I’m currently enrolled in the [BlueDot Technical AI Safety Course](https://bluedot.org/courses/technical-ai-safety/) and am seeking research engineering roles in frontier AI labs. I’m especially interested in research agendas that use interpretability to enable guided or intentional training. I’m also interested in evaluation awareness and model misalignment.
+I’m currently enrolled in the [BlueDot Technical AI Safety Course](https://bluedot.org/courses/technical-ai-safety/) and am **seeking research engineering roles at frontier AI labs or safety-focused research organizations**.
+
+I’m especially interested in **research agendas that use mechanistic interpretability to enable guided or intentional training**—for example, leveraging internal representations to shape model objectives, improve alignment robustness, or detect emerging misalignment. I’m also interested in **evaluation awareness, scalable oversight, and failure modes related to model misalignment**.
