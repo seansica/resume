@@ -2,7 +2,7 @@
 layout: book-shelf
 title: bookshelf
 permalink: /books/
-nav: false
+nav: true
 collection: books
 ---
 
@@ -10,6 +10,4 @@ collection: books
 >
 > -- Gene Wolfe, Book of the New Sun, Book 1: Shadow of the Torturer (1980)
 
-## Books that I am reading, have read, or will read
-
-See my Goodreads profile [**here**](https://www.goodreads.com/user/show/197666414-sean)!
+I will forget to keep this up-to-date. Check out my [**Goodreads profile**](https://www.goodreads.com/user/show/197666414-sean) for the latest on what I'm reading.
