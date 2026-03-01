@@ -18,4 +18,4 @@ For my Berkeley MIDS capstone (DATASCI 210, Summer 2025), I developed a machine 
 
 ## Technical Details
 
-The system processes lap-by-lap telemetry streams to identify patterns that precede safety car interventions. By applying ROCKET — a fast, scalable time series classification method — the model learns convolutional kernel features that capture temporal dynamics in driving data without the computational cost of deep learning approaches.
+The system processes lap-by-lap telemetry streams to identify patterns that precede safety car interventions. By applying [ROCKET](https://arxiv.org/abs/1910.13051) — a fast, scalable time series classification method — the model learns convolutional kernel features that capture temporal dynamics in driving data without the computational cost of deep learning approaches.
