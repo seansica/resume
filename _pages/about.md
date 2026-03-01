@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  AI Safety & Interpretability · <a href='https://www.mitre.org/'>MITRE</a> · <a href='https://www.ischool.berkeley.edu/programs/mids'>UC Berkeley MIDS</a>
+  <a href='https://www.mitre.org/our-impact/mitre-labs/software-engineering-innovation-center'>SWE @ MITRE Labs</a> · <a href='https://www.ischool.berkeley.edu/programs/mids'>UC Berkeley MIDS alumni</a>
 
 profile:
   align: right
@@ -23,9 +23,7 @@ latest_posts:
   enabled: false
 ---
 
-I’m a research engineer working at the intersection of **AI safety**, **mechanistic interpretability**, and **cybersecurity**.
-
-At [MITRE](https://www.mitre.org/), I help lead software development for [MITRE ATT&CK](https://attack.mitre.org/) and contribute to research on [Judy](https://www.mitre.org/news-insights/impact-story/naming-supercomputer-mitre-honors-early-innovator), the supercomputing platform powering the [Federal AI Sandbox](https://www.mitre.org/focus-areas/artificial-intelligence/federal-ai-sandbox).
+At MITRE, I help lead software development for [MITRE ATT&CK](https://attack.mitre.org/) and contribute to research on [Judy](https://www.mitre.org/news-insights/impact-story/naming-supercomputer-mitre-honors-early-innovator), the supercomputing platform powering the [Federal AI Sandbox](https://www.mitre.org/focus-areas/artificial-intelligence/federal-ai-sandbox).
 
 My recent research has focused on understanding how fine-tuning reshapes internal model representations. During my master’s work at Berkeley (2024), I used mechanistic interpretability methods to empirically characterize how fine-tuning corpora affect a model’s parametric knowledge. In 2025, I worked on a small research team training sparse autoencoders (SAEs) and experimenting with linear cross-layer probes to study feature drift and representation shift under fine-tuning.
 
