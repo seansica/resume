@@ -10,4 +10,4 @@ collection: books
 >
 > -- Gene Wolfe, Book of the New Sun, Book 1: Shadow of the Torturer (1980)
 
-I will forget to keep this up-to-date. Check out my [**Goodreads profile**](https://www.goodreads.com/user/show/197666414-sean) for the latest on what I'm reading.
+Check out my [**Goodreads profile**](https://www.goodreads.com/user/show/197666414-sean) to see what I'm reading.

@@ -5,3 +5,6 @@ repo_description_lines_max: 2
 
 github_repos:
   - seansica/sae-vector-steering
+  - mitre-attack/attack-website
+  - mitre-attack/mitreattack-python
+  - center-for-threat-informed-defense/attack-workbench-rest-api

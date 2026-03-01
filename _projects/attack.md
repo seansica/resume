@@ -16,16 +16,21 @@ category: engineering
 
 Authored the **first codified expression of the ATT&CK taxonomy** — a TypeScript library that formalizes the ATT&CK data model, enabling type-safe programmatic access to ATT&CK content. This library underpins multiple downstream tools and integrations.
 
+### ATT&CK Website Search
+
+Designed and implemented the **client-side search** for [attack.mitre.org](https://attack.mitre.org/). The search runs entirely in the browser with no backend search engine — it uses [FlexSearch](https://github.com/nicext/flexsearch) to precompute a search index at build time and stores index-to-page mappings in the browser's IndexedDB for fast, offline-capable lookups.
+
 ### TAXII 2.1 Server
 
 Designed, deployed, and maintain the **production ATT&CK TAXII 2.1 server** ([attack-taxii.mitre.org](https://attack-taxii.mitre.org)), a REST API that serves ATT&CK data in the STIX format to automated threat intelligence platforms worldwide.
 
-### Open-Source Libraries
+### ATT&CK Workbench REST API
 
-Maintain 10+ open-source repositories spanning:
-- **Python and TypeScript libraries** for ATT&CK data access and manipulation
-- **REST APIs** for content management and distribution
-- **ATT&CK Workbench** — a web-based platform for curating and extending ATT&CK content
+Primary developer for the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api). Inherited and refactored the entire codebase for extensibility. Currently implementing **release tracks** (in beta) — a new publishing model that will enable the ATT&CK team to release content more frequently, a significant operational improvement for the framework's consumers.
+
+### mitreattack-python
+
+Maintain the [mitreattack-python](https://github.com/mitre-attack/mitreattack-python) library (published on PyPI). Currently leading a major refactor with plans to implement Pydantic schemas mirroring the Zod schemas in the ATT&CK Data Model — working toward a single-source-of-truth schema definition that can generate typed models for both Python and TypeScript.
 
 ## Engineering at Scale
 
