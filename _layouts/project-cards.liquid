@@ -1,0 +1,38 @@
+---
+layout: page
+---
+<div class="project-cards-layout">
+  {% if page.project_intro %}
+    <div class="project-intro">{{ page.project_intro | markdownify }}</div>
+  {% endif %}
+
+  {% if page.project_section_title %}
+    <h2>{{ page.project_section_title }}</h2>
+  {% endif %}
+
+  <div class="attack-contrib-grid">
+    {% for card in page.project_cards %}
+      <section class="attack-card {{ card.accent_class }}">
+        <h3>
+          {% if card.title_url %}
+            <a href="{{ card.title_url }}">{{ card.title }}</a>
+          {% else %}
+            {{ card.title }}
+          {% endif %}
+        </h3>
+
+        {% if card.description %}
+          <div class="card-description">{{ card.description | markdownify }}</div>
+        {% endif %}
+
+        {% if card.links %}
+          <p class="project-card-links">
+            {% for link in card.links %}
+              <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}<br>{% endunless %}
+            {% endfor %}
+          </p>
+        {% endif %}
+      </section>
+    {% endfor %}
+  </div>
+</div>
